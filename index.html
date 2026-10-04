@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GUN BLITZ · 枪战风云</title>
+<meta name="description" content="GUN BLITZ 枪战风云 — 单文件 HTML5 俯视角竞技场射击游戏，四把武器、四种敌人、无限波次。">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{min-height:100%;}
+  body{
+    display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px;
+    font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    background:radial-gradient(circle at 50% 35%,#0d1526 0%,#05070d 70%);
+    color:#e6f0ff;
+  }
+  .card{
+    width:min(680px,100%);padding:44px 40px 38px;text-align:center;
+    background:rgba(8,14,26,.6);border:1px solid rgba(90,190,255,.18);
+    border-radius:18px;backdrop-filter:blur(10px);
+    box-shadow:0 0 80px rgba(0,180,255,.12),0 24px 60px rgba(0,0,0,.6);
+  }
+  h1{
+    font-size:clamp(34px,7vw,58px);font-weight:900;letter-spacing:.14em;
+    background:linear-gradient(180deg,#fff,#5ce1ff 58%,#1e8fd6);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 0 24px rgba(92,225,255,.45));
+  }
+  .sub{margin-top:10px;color:#8fd8ff;letter-spacing:.28em;font-size:13px;}
+  .desc{margin-top:26px;color:#9fc4dc;font-size:14px;line-height:1.9;}
+  .play{
+    display:inline-block;margin-top:30px;padding:15px 60px;
+    font-size:17px;font-weight:800;letter-spacing:.34em;text-decoration:none;
+    color:#04121e;background:linear-gradient(180deg,#8ceaff,#2aa9e0);
+    border-radius:11px;box-shadow:0 0 30px rgba(92,225,255,.5);
+    transition:transform .15s,box-shadow .15s;
+  }
+  .play:hover{transform:translateY(-2px);box-shadow:0 0 46px rgba(92,225,255,.8);}
+  .play:active{transform:translateY(0);}
+  .grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));
+    gap:10px;margin-top:32px;
+  }
+  .item{
+    padding:11px 8px;border-radius:9px;
+    background:rgba(255,255,255,.04);border:1px solid rgba(120,190,255,.14);
+  }
+  .item b{display:block;font-size:14px;color:#dff6ff;font-weight:700;}
+  .item span{display:block;margin-top:4px;font-size:11px;color:#6e93ad;line-height:1.5;}
+  .keys{margin-top:30px;font-size:12.5px;color:#7fb4d6;line-height:2.1;}
+  kbd{
+    display:inline-block;min-width:26px;padding:2px 8px;margin:0 2px;
+    border-radius:5px;font-family:inherit;font-size:11px;
+    background:rgba(255,255,255,.08);border:1px solid rgba(120,190,255,.2);color:#dff6ff;
+  }
+  footer{margin-top:30px;font-size:12px;color:#4d6b82;}
+  footer a{color:#5ce1ff;text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+  <main class="card">
+    <h1>枪战风云</h1>
+    <div class="sub">GUN BLITZ · 俯视角竞技场</div>
+
+    <p class="desc">
+      单文件 HTML5 射击游戏，纯 Canvas 手写渲染，零依赖、无需安装。<br>
+      在密闭战场迎战一波波敌人，看你能撑到第几波。
+    </p>
+
+    <a class="play" href="./gun-blitz.html">开始战斗</a>
+
+    <div class="grid">
+      <div class="item"><b>手枪</b><span>弹药无限</span></div>
+      <div class="item"><b>突击步枪</b><span>全自动泼水</span></div>
+      <div class="item"><b>霰弹枪</b><span>8 弹丸近战</span></div>
+      <div class="item"><b>狙击枪</b><span>贯穿 3 人</span></div>
+    </div>
+
+    <div class="grid">
+      <div class="item"><b>冲锋兵</b><span>贴身突进</span></div>
+      <div class="item"><b>疾行者</b><span>蛇形机动</span></div>
+      <div class="item"><b>枪手</b><span>中距对射</span></div>
+      <div class="item"><b>重装兵</b><span>重甲厚血</span></div>
+    </div>
+
+    <div class="keys">
+      <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 移动 &nbsp;·&nbsp;
+      <kbd>鼠标</kbd> 瞄准 &nbsp;·&nbsp; <kbd>左键</kbd> 开火<br>
+      <kbd>R</kbd> 换弹 &nbsp;·&nbsp; <kbd>1</kbd>~<kbd>4</kbd> 换枪 &nbsp;·&nbsp;
+      <kbd>P</kbd> 暂停 &nbsp;·&nbsp; <kbd>M</kbd> 静音
+    </div>
+
+    <footer>
+      连续击杀累积倍率 · 掉落红心回血、黄箱补弹 · 波次越高敌人越硬<br>
+      <a href="./gun-blitz.html">直接进入游戏 gun-blitz.html</a>
+    </footer>
+  </main>
+</body>
+</html>

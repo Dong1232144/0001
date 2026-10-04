@@ -1,0 +1,27 @@
+# ---- 操作系统 ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+
+# ---- 编辑器 / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- 依赖与构建产物 ----
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# ---- 临时文件 ----
+*.tmp
+*.bak
+*.orig

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 · 页面未找到 | GUN BLITZ</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px;
+    font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    background:radial-gradient(circle at 50% 35%,#0d1526 0%,#05070d 70%);
+    color:#e6f0ff;
+  }
+  .card{
+    width:min(560px,100%);padding:48px 40px 42px;text-align:center;
+    background:rgba(8,14,26,.6);border:1px solid rgba(90,190,255,.18);
+    border-radius:18px;backdrop-filter:blur(10px);
+    box-shadow:0 0 80px rgba(0,180,255,.12),0 24px 60px rgba(0,0,0,.6);
+  }
+  .code{
+    font-size:clamp(64px,16vw,110px);font-weight:900;line-height:1;letter-spacing:.06em;
+    background:linear-gradient(180deg,#fff,#5ce1ff 58%,#1e8fd6);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 0 26px rgba(92,225,255,.45));
+  }
+  .sub{margin-top:14px;color:#8fd8ff;letter-spacing:.26em;font-size:13px;}
+  .msg{margin-top:24px;color:#9fc4dc;font-size:14px;line-height:1.9;}
+  .msg code{
+    padding:2px 7px;border-radius:5px;font-size:12.5px;
+    background:rgba(255,255,255,.07);border:1px solid rgba(120,190,255,.16);color:#bfe9ff;
+  }
+  .btns{margin-top:32px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+  a.btn{
+    display:inline-block;padding:12px 30px;border-radius:10px;text-decoration:none;
+    font-size:14px;font-weight:700;letter-spacing:.2em;transition:.15s;
+  }
+  a.primary{
+    color:#04121e;background:linear-gradient(180deg,#8ceaff,#2aa9e0);
+    box-shadow:0 0 26px rgba(92,225,255,.5);
+  }
+  a.primary:hover{transform:translateY(-2px);box-shadow:0 0 40px rgba(92,225,255,.8);}
+  a.ghost{
+    color:#bfe9ff;background:rgba(255,255,255,.05);
+    border:1px solid rgba(120,190,255,.25);
+  }
+  a.ghost:hover{background:rgba(92,225,255,.14);}
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="code">404</div>
+    <div class="sub">PAGE NOT FOUND</div>
+    <p class="msg">
+      没有找到这个页面。<br>
+      检查一下地址是否拼错，或者回到入口重新开始。
+    </p>
+    <div class="btns">
+      <a class="btn primary" href="./gun-blitz.html">开始战斗</a>
+      <a class="btn ghost" href="./">返回首页</a>
+    </div>
+  </main>
+</body>
+</html>
